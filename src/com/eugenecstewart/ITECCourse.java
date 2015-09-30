@@ -30,7 +30,7 @@ public class ITECCourse {
         this.code = courseCode;
         this.students = new ArrayList<String>();
         this.maxStudents = courseMaxStudents;
-        this.roomnumber = roomnumber;
+
     }
   public   void addStudent(String studentName) {
         if (students == null) {    //See if students has been set up yet – initialize it if not

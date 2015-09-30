@@ -36,8 +36,12 @@ public class Main {
 
         Java.writeCourseInfo();
 
-        ITECCourse InfoTechConcepts = ITECCourse("Info Tech Concepts",ll00,30);
+        ITECCourse InfoTechConcepts = new ITECCourse("Info Tech Concepts",1100,30);
         InfoTechConcepts.setRoomnumber(3050);
-        InfoTechConcepts.addStudent();
+        InfoTechConcepts.addStudent("Max");
+        InfoTechConcepts.addStudent("Nancy");
+        InfoTechConcepts.addStudent("Orson");
+
+        InfoTechConcepts.writeCourseInfo();
     }
 }
