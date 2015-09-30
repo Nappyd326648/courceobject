@@ -1,7 +1,7 @@
 package com.eugenecstewart;
 
 import java.util.ArrayList;
-import java.util.Scanner;
+
 
 /**
  * Created by in0418gq on 9/30/2015.
@@ -12,11 +12,10 @@ public class ITECCourse {
     private ArrayList<String> students;
    private int maxStudents;
     private int roomnumber;
-    Scanner s= new Scanner(System.in);
+
 
     public int getRoomnumber() {
-        System.out.println("what room is the class in?");
-        roomnumber=s.nextInt();
+
         return roomnumber;
     }
 
@@ -25,7 +24,7 @@ public class ITECCourse {
     }
 
     //Constructor
-    ITECCourse(String courseName, int courseCode, int courseMaxStudents,int roomnumber)
+    ITECCourse(String courseName, int courseCode, int courseMaxStudents)
     {
         this.name = courseName;
         this.code = courseCode;
@@ -43,6 +42,7 @@ public class ITECCourse {
  public    void writeCourseInfo() {
         System.out.println("Course Name: " + this.name);
         System.out.println("Course Code: " + this.code);
+        System.out.println("Course Room: T" + this.roomnumber);
         System.out.println("Students enrolled:");
         for (String student : this.students) {
             System.out.println(student);

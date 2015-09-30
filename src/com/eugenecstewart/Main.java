@@ -16,8 +16,7 @@ public class Main {
         maintenanceCourse.addStudent("Anna");
         maintenanceCourse.addStudent("Bill");
         maintenanceCourse.addStudent("Carl");
-
-
+        maintenanceCourse.setRoomnumber(250);
         maintenanceCourse.writeCourseInfo();
 
 
@@ -27,7 +26,7 @@ public class Main {
         datacomCourse.addStudent("Dave");
         datacomCourse.addStudent("Ed");
         datacomCourse.addStudent("Flora");
-
+        datacomCourse.setRoomnumber(111);
         datacomCourse.writeCourseInfo();
 
         ITECCourse Java = new ITECCourse("Java Programming",2545,24);
@@ -36,5 +35,9 @@ public class Main {
         Java.addStudent("Tyler");
 
         Java.writeCourseInfo();
+
+        ITECCourse InfoTechConcepts = ITECCourse("Info Tech Concepts",ll00,30);
+        InfoTechConcepts.setRoomnumber(3050);
+        InfoTechConcepts.addStudent();
     }
 }
